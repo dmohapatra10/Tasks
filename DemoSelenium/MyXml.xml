@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mv-hh:Members xmlns:mv-hh="http://www.myvest.com/household" xmlns:mv="http://www.myvest.com">
+    <mv-hh:OrganizationId id="_zycMyJB5w_OwP8pO9eMN4g" idSource="MYVEST"/>
+    <mv-hh:OrganizationName>TIAA-CREF PA</mv-hh:OrganizationName>
+    <mv-hh:OrganizationNumber>1</mv-hh:OrganizationNumber>
+    <mv-hh:Member primary="true">
+        <mv:MemberId id="_tvK1IXsbKbw" idSource="MYVEST"/>
+        <mv:DisplayName>autohousehold91086.test789441</mv:DisplayName>
+        <mv-hh:AlternativeIdentifier>349154474</mv-hh:AlternativeIdentifier>
+    </mv-hh:Member>
+    <mv-hh:Member primary="false">
+        <mv:MemberId id="_GnclcFWwJkY" idSource="MYVEST"/>
+        <mv:DisplayName>test789.autotest2</mv:DisplayName>
+        <mv-hh:AlternativeIdentifier>46604</mv-hh:AlternativeIdentifier>
+    </mv-hh:Member>
+</mv-hh:Members>
