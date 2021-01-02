@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import APIConstantResources.APIConstants;
 import APIResources.GetAllAPIMethods;
 
 import static io.restassured.RestAssured.*; 
@@ -60,7 +61,9 @@ public class WeatherReportingComparator extends Baselib{
 		String tempInDegreeValue=weatherPage.getTemperatureData(tempData);
 		
 		String apiID=ConfigFileManager.getInstance().getApplicationConfigData().getApplicationData("apiid");	
-		String res=GetAllAPIMethods.getTemperatureUsingCityNameAPI(cityName, apiID);
+		APIConstants cons=APIConstants.getTempUsingCityName;
+		String resource=cons.getResource();
+		String res=GetAllAPIMethods.getTemperatureUsingCityNameAPI(cityName, apiID,resource);
 		
 		JsonPath jpath=new JsonPath(res);
 		Float tempValueApi=jpath.get("main.temp");
