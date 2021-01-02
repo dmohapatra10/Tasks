@@ -70,7 +70,7 @@ public class Baselib {
 		driver = new EventFiringWebDriver(driver2);
 		EventHandler handler = new EventHandler();
 		driver.register(handler);
-		driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(ConfigFileManager.getInstance().getApplicationConfigData().getApplicationData("url"));		

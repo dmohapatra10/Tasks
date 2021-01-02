@@ -11,7 +11,7 @@ public class GetAllAPIMethods {
 	
 	private static String baseURI=ConfigFileManager.getInstance().getApplicationConfigData().getApplicationData("apiurl");
 	
-	public static String getAPI(String cityName, String apiKey)
+	public static String getTemperatureUsingCityNameAPI(String cityName, String apiKey)
 	{
 		RestAssured.useRelaxedHTTPSValidation();
 		RestAssured.baseURI=baseURI;

@@ -60,7 +60,7 @@ public class WeatherReportingComparator extends Baselib{
 		String tempInDegreeValue=weatherPage.getTemperatureData(tempData);
 		
 		String apiID=ConfigFileManager.getInstance().getApplicationConfigData().getApplicationData("apiid");	
-		String res=GetAllAPIMethods.getAPI(cityName, apiID);
+		String res=GetAllAPIMethods.getTemperatureUsingCityNameAPI(cityName, apiID);
 		
 		JsonPath jpath=new JsonPath(res);
 		Float tempValueApi=jpath.get("main.temp");
